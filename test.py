@@ -24,3 +24,7 @@ test_player.q[(2,2,2,2),(2,1)] = 3
 test_player.q[(2,2,2,2),(3,1)] = -1
 
 print(test_player.best_future_reward([2,2,2,2]) == 10)
+
+# Test choose_action
+
+print(test_player.choose_action([2,2,2,2], epsilon=False) == (0,1))
